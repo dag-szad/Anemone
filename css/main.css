@@ -1,1 +1,95 @@
-/*# sourceMappingURL=main.css.map */
+:root {
+  --accent-main: #e86f54;
+  --accent-main-hover: #EB866F;
+  --text-main: #000;
+  --text-main-transparent: #00000075;
+  --text-secondary: #FFF;
+  --background-main: #FFF;
+  --icon-black: #0E0E0E;
+  --icon-white: #FFF;
+}
+
+body {
+  background-color: var(--background-main);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1250px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.header__logo {
+  width: 45px;
+  height: 35px;
+}
+.header__nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: inline;
+  }
+}
+.header__nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  transition: gap 0.3s ease-in-out;
+}
+@media screen and (min-width: 992px) {
+  .header__nav-list {
+    gap: 50px;
+  }
+}
+.header__nav-link {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-main);
+  transition: color 0.3s ease-in-out;
+}
+.header__nav-link:hover, .header__nav-link:active, .header__nav-link:focus {
+  color: var(--accent-main);
+}
+.header__icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header__icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  fill: black;
+  transition: fill 0.3s ease-in-out;
+  cursor: pointer;
+}
+.header__icon:hover {
+  fill: var(--accent-main);
+}
+
+.header-modal {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
