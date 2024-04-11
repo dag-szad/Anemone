@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 60px;
+
+  &__logo {
+    width: 45px;
+    height: 35px;
+  }
+
+  &__nav {
+    display: none;
+
+    @include screen(medium) {
+      display: inline;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+    @include transition(gap);
+
+    @include screen(large) {
+      gap: 50px;
+    }
+  }
+
+  &__nav-link {
+    @include font('montserrat', '20', 'regular');
+    color: var(--text-main);
+
+    @include transition(color);
+  }
+
+  &__nav-link:hover,
+  &__nav-link:active,
+  &__nav-link:focus {
+    color: var(--accent-main);
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0;
+    fill: black;
+
+    @include transition(fill);
+
+    cursor: pointer;
+  }
+
+  &__icon:hover {
+    fill: var(--accent-main);
+  }
+}
+
+.header-modal {
+  display: none;
+}
