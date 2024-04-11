@@ -1,0 +1,24 @@
+// General styles
+body {
+    background-color: var(--background-main);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1250px;
+}

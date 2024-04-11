@@ -1,0 +1,68 @@
+// Screen mixin
+$breakpoints: (
+  'extra-small': 0,
+  'small': 568px,
+  'medium': 768px,
+  'large': 992px,
+  'extra-large': 1200px
+);
+
+@mixin screen($size) {
+  $width: map-get($breakpoints, $size);
+  $query: 'min-width: #{$width}';
+
+  @media screen and ($query) {
+    @content;
+  }
+};
+
+// Font mixin
+$font-family: (
+  'montserrat': 'Montserrat',
+  'inter': 'Inter'
+);
+
+$font-weights: (
+  'regular': 400,
+  'medium': 500,
+  'semi-bold': 600,
+  'bold': 700,
+  'extra-bold': 800
+);
+
+$font-sizes: (
+  '12': 0.75rem,
+  '14': 0.875rem,
+  '16': 1rem,
+  '18': 1.125rem,
+  '20': 1.25rem,
+  '22': 1.375rem,
+  '24': 1.5rem,
+  '26': 1.625rem,
+  '34': 2.125rem,
+  '36': 2.25rem,
+  '40': 2.5rem,
+  '44': 2.75rem,
+  '160': 10rem
+);
+
+@mixin font($family, $size, $weight) {
+  $font-family: map-get($font-family, $family);
+  $font-size: map-get($font-sizes, $size);
+  $font-weight: map-get($font-weights, $weight);
+
+  font-family: $font-family, Arial, sans-serif;
+  font-size: $font-size;
+  font-weight: $font-weight;
+};
+
+// Transition mixin
+@mixin transition($properties...) {
+    $transition: ();
+    @each $property in $properties {
+      $transition: append(
+          $transition, ($property 0.3s ease-in-out), $separator: comma
+      );
+    }
+    transition: $transition;
+  }
