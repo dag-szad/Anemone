@@ -1,0 +1,94 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 45px 0 0 0;
+
+  @include screen(medium) {
+    margin: 40px;
+  }
+
+  @include screen(large) {
+    margin: 60px;
+  }
+
+  &__image {
+    width: 145px;
+    height: 274px;
+
+    background-image: url('../images/banner/banner_small.png');
+    background-repeat: no-repeat;
+
+    @include screen(medium) {
+      width: 390px;
+      height: 636px;
+
+      background-image: url('../images/banner/banner_big.png');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .banner {
+        background-image: url('../images/banner/banner_small@2x.png');
+
+        @include screen('medium') {
+          background-image: url('../images/banner/banner_big@2x.png');
+        }
+      }
+    }
+  }
+
+  &__elements {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    @include screen(medium) {
+      gap: 30px;
+    }
+  }
+
+  &__text {
+    width: 75px;
+
+    @include font('montserrat', '14', 'regular');
+    text-align: center;
+    margin: 0;
+
+    @include screen(medium) {
+      width: 145px;
+      @include font('montserrat', '24', 'regular');
+    }
+  }
+
+  &__icon {
+    width: 75px;
+
+    @include screen(medium) {
+      width: 145px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    top: -30px;
+
+    @include transition(font-size);
+
+    @include font('montserrat', '52', 'regular');
+    text-transform: uppercase;
+    margin: 0;
+
+    @include screen(medium) {
+      @include font('montserrat', '120', 'regular');
+      top: -70px;
+    }
+
+    @include screen(large) {
+      @include font('montserrat', '160', 'regular');
+      top: -100px;
+    }
+  }
+}
