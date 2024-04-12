@@ -1,0 +1,9 @@
+.about {
+    &__title {
+        @include font('montserrat', '24', 'bold');
+        text-transform: uppercase;
+    }
+
+    
+
+}
