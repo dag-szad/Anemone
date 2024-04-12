@@ -268,4 +268,11 @@ a {
     font-weight: 400;
     top: -100px;
   }
+}
+
+.about__title {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
