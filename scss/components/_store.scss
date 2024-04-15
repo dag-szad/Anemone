@@ -1,0 +1,65 @@
+.store {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+
+    @include screen(medium) {
+        gap: 60px;
+    }
+
+    &__elements {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+
+        @include screen(medium) {
+            gap: 32px;
+        }
+    }
+
+    &__element {
+        width: clamp(136px, 50% - 8px, 600px);
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        @include screen(medium) {
+            width: clamp(136px, 50% - 16px, 500px);
+        }
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__titles {
+        @include font('montserrat', '16', 'medium');
+        margin: 6px 0 0 0;
+
+        @include screen(medium) {
+            @include font('montserrat', '32', 'medium');
+        }
+
+        @include screen(large) {
+            @include font('montserrat', '36', 'medium');
+        }
+    }
+
+    &__prices {
+        @include font('montserrat', '12', 'semi-bold');
+        color: var(--text-main-transparent);
+        margin: 0;
+
+        @include screen(medium) {
+            @include font('montserrat', '24', 'semi-bold');
+        }
+
+        @include screen(large) {
+            @include font('montserrat', '28', 'semi-bold');
+        }
+    }
+
+
+}

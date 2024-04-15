@@ -37,7 +37,7 @@
     <header class="container header">
       <a href="index.html">
         <svg class="header__logo">
-            <use href="./images/icons/icons.svg#logo" alt="Anemone logo" ></use>
+          <use href="./images/icons/icons.svg#logo" alt="Anemone logo"></use>
         </svg>
       </a>
       <nav class="header__nav">
@@ -50,22 +50,31 @@
       </nav>
       <div class="header__icons">
         <svg class="header__icon" width="24" height="24">
-            <use href="./images/icons/icons.svg#icon_phone" alt="Phone icon"></use>
+          <use
+            href="./images/icons/icons.svg#icon_phone"
+            alt="Phone icon"
+          ></use>
         </svg>
         <svg class="header__icon" width="24" height="24">
-            <use href="./images/icons/icons.svg#icon_menu" alt="Hamburger menu icon"></use>
+          <use
+            href="./images/icons/icons.svg#icon_menu"
+            alt="Hamburger menu icon"
+          ></use>
         </svg>
       </div>
 
       <div class="header-modal">
         <svg>
-            <use href="./images/icons/icons.svg#icon_close" alt="Anemone logo" ></use>
+          <use
+            href="./images/icons/icons.svg#icon_close"
+            alt="Anemone logo"
+          ></use>
         </svg>
         <a href="index.html">
-            <svg>
-                <use href="./images/icons/icons.svg#logo" alt="Anemone logo" ></use>
-            </svg>
-          </a>
+          <svg>
+            <use href="./images/icons/icons.svg#logo" alt="Anemone logo"></use>
+          </svg>
+        </a>
         <nav>
           <ul class="header-modal__nav">
             <li>
@@ -80,7 +89,80 @@
         </nav>
       </div>
     </header>
-    <main></main>
+    <main class="main">
+      <section class="container banner">
+        <div class="banner__elements">
+          <p class="banner__text">flower<br />studio</p>
+          <div class="banner__image"></div>
+          <svg class="banner__icon">
+            <use
+              href="./images/icons/icons.svg#shop_button"
+              alt="Shop now button"
+            ></use>
+          </svg>
+        </div>
+        <h1 class="banner__title">Anemone</h1>
+      </section>
+      <section class="container about">
+        <h2 class="about__title title">About</h2>
+        <div class="about__elements">
+          <p class="about__text">
+            We are a minimalistic flower studio. We love people and flowers.
+            Therefore, every day we give people the beauty and joy creating
+            stylish and modern masterpieces. Every bouquet we create is unique
+            as you are.
+          </p>
+          <img
+            alt="Two pink flowers"
+            src="./images/about/about.png"
+            srcset="./images/about/about@2x.png 2x"
+            class="about__image"
+          />
+        </div>
+      </section>
+      <section class="container store">
+        <h2 class="store__title title">Store</h2>
+        <ul class="store__elements">
+          <li class="store__element">
+            <img 
+              alt="Orange flowers bouquet" 
+              src="./images/store/bouquet1.png" 
+              srcset="./images/store/bouquet1@2x.png 2x" 
+              class="store__image" >
+            <h3 class="store__titles">compliments</h2>
+            <p class="store__prices">from $15</p>
+          </li>
+          <li class="store__element">
+            <img 
+              alt="Pink and white flowers bouquet" 
+              src="./images/store/bouquet2.png" 
+              srcset="./images/store/bouquet2@2x.png 2x" 
+              class="store__image" >
+            <h3 class="store__titles">bouquets size S</h2>
+            <p class="store__prices">from $25</p>
+          </li>
+          <li class="store__element">
+            <img 
+              alt="Blue flowers bouquet" 
+              src="./images/store/bouquet3.png" 
+              srcset="./images/store/bouquet3@2x.png 2x" 
+              class="store__image" >
+            <h3 class="store__titles">bouquets size M</h2>
+            <p class="store__prices">from $45</p>
+          </li>
+          <li class="store__element">
+            <img 
+              alt="Yellow flowers bouquet" 
+              src="./images/store/bouquet4.png" 
+              srcset="./images/store/bouquet4@2x.png 2x" 
+              class="store__image" >
+            <h3 class="store__titles">bouquets size L</h2>
+            <p class="store__prices">from $60</p>
+          </li>
+        </ul>
+        <button type="button" class="store__button button">Order flowers</button>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

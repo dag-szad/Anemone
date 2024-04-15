@@ -1,24 +1,70 @@
 // General styles
 body {
-    background-color: var(--background-main);
+  background-color: var(--background-main);
+  color: var(--text-main);
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-   list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
-    margin: 0 auto;
-    width: 80%;
-    max-width: 1250px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1250px;
+}
+
+.title {
+  @include font('montserrat', '24', 'bold');
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin: 0 0 32px 0;
+
+  @include screen(medium) {
+    @include font('montserrat', '44', 'bold');
+  }
+}
+
+.title::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--text-main);
+  margin-left: 10px;
+}
+
+.button {
+  background-color: var(--accent-main);
+  border-radius: 38px;
+  border: none;
+
+  @include font('montserrat', '18', 'medium');
+  color: var(--text-secondary);
+
+  padding: 10px 35px;
+  margin: 0 auto;
+
+  @include transition(background-color);
+
+  @include screen(medium) {
+    @include font('montserrat', '28', 'medium');
+    padding: 15px 45px;
+  }
+
+  &:hover {
+    background-color: var(--accent-main-hover);
+  }
 }

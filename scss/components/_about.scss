@@ -1,0 +1,40 @@
+.about {
+  &__elements {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include screen(medium) {
+      flex-direction: row;
+      gap: 54px;
+      align-items: center;
+    }
+
+    @include screen(large) {
+      flex-direction: row;
+      gap: 54px;
+    }
+  }
+
+  &__text {
+    @include font('montserrat', '16', 'regular');
+    width: clamp(250px, 100%, 510px);
+    margin: 0;
+
+    @include screen(medium) {
+      @include font('montserrat', '20', 'regular');
+    }
+
+    @include screen(large) {
+      @include font('montserrat', '22', 'regular');
+    }
+  }
+
+  &__image {
+    width: clamp(250px, 100%, 344px);
+
+    @include screen(medium) {
+      width: clamp(344px, 100%, 632px);
+    }
+  }
+}
