@@ -16,28 +16,6 @@
     }
   }
 
-  &__title {
-    @include font('montserrat', '24', 'bold');
-    text-transform: uppercase;
-
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-    margin: 0 0 32px 0;
-
-    @include screen(medium) {
-      @include font('montserrat', '44', 'bold');
-    }
-  }
-
-  &__title::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid var(--text-main);
-    margin-left: 10px;
-  }
-
   &__text {
     @include font('montserrat', '16', 'regular');
     width: clamp(250px, 100%, 510px);
