@@ -1,0 +1,84 @@
+.delivery {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    margin: 0;
+    padding: 0;
+
+    counter-reset: item;
+
+    @include transition(gap);
+
+    @include screen(medium) {
+      gap: 23px;
+    }
+
+    @include screen(large) {
+      gap: 32px;
+    }
+  }
+
+  &__step {
+    counter-increment: item;
+
+    @include font('montserrat', '14', 'medium');
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @include transition(gap);
+
+    @include screen(medium) {
+      @include font('montserrat', '20', 'medium');
+      gap: 20px;
+    }
+
+    @include screen(large) {
+      @include font('montserrat', '32', 'medium');
+      gap: 56px;
+    }
+  }
+
+  &__step::before {
+    content: counter(item);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+    border-radius: 100%;
+
+    min-width: 40px;
+    height: 40px;
+
+    @include font('montserrat', '20', 'medium');
+
+    @include screen(medium) {
+      @include font('montserrat', '26', 'medium');
+      min-width: 64px;
+      height: 64px;
+    }
+  }
+
+  &__image {
+    width: 100vw;
+    height: 135px;
+    object-fit: cover;
+
+    margin: 26px 0 0 0;
+
+    @include screen(medium) {
+      height: 264px;
+      margin-top: 40px;
+    }
+
+    @include screen(large) {
+      height: 391px;
+      margin-top: 60px;
+    }
+  }
+}
