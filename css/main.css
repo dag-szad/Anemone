@@ -5,6 +5,7 @@
   --text-main-transparent: #00000075;
   --text-secondary: #FFF;
   --background-main: #FFF;
+  --background-secondary: #000;
   --icon-black: #0E0E0E;
   --icon-white: #FFF;
 }
@@ -632,4 +633,121 @@ a {
     font-size: 2rem;
     font-weight: 500;
   }
+}
+
+.footer {
+  background-color: var(--background-secondary);
+  color: var(--text-secondary);
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  transition: padding 0.3s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .footer__content {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer__content {
+    padding: 72px 0;
+  }
+}
+.footer__logo {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .footer__logo {
+    display: block;
+    width: 73px;
+    height: 57px;
+    fill: var(--text-secondary);
+  }
+}
+.footer__icon {
+  width: 73px;
+  height: 57px;
+  fill: var(--text-secondary);
+  transition: fill 0.3s ease-in-out;
+}
+.footer__icon:hover {
+  fill: var(--accent-main);
+}
+.footer__elements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  transition: gap 0.3s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .footer__elements {
+    flex-wrap: nowrap;
+    gap: 44px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer__elements {
+    gap: 96px;
+  }
+}
+.footer__subtitle {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__subtitle {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+.footer__info {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0 0 12px 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__info {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+.footer__info:hover a {
+  transition: color 0.3s ease-in-out;
+  color: var(--accent-main);
+}
+.footer__socials {
+  display: flex;
+  gap: 14px;
+}
+@media screen and (min-width: 768px) {
+  .footer__socials {
+    display: none;
+  }
+}
+.footer__socials-alt {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer__socials-alt {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+.footer__social-icon {
+  width: 28px;
+  height: 28px;
+  stroke: var(--text-secondary);
+  cursor: pointer;
+  transition: stroke 0.3s ease-in-out;
+}
+.footer__social-icon:hover {
+  stroke: var(--accent-main);
 }/*# sourceMappingURL=main.css.map */
