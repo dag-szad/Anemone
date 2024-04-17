@@ -1,0 +1,117 @@
+.footer {
+  background-color: var(--background-secondary);
+  color: var(--text-secondary);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 32px 0;
+    @include transition(padding);
+
+    @include screen(medium) {
+      padding: 60px 0;
+    }
+
+    @include screen(large) {
+      padding: 72px 0;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @include screen(large) {
+      display: block;
+
+      width: 73px;
+      height: 57px;
+
+      fill: var(--text-secondary);
+    }
+  }
+
+  &__icon {
+    width: 73px;
+    height: 57px;
+
+    fill: var(--text-secondary);
+    @include transition(fill);
+
+    &:hover {
+      fill: var(--accent-main);
+    }
+  }
+
+  &__elements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    @include transition(gap);
+
+    @include screen(medium) {
+      flex-wrap: nowrap;
+      gap: 44px;
+    }
+
+    @include screen(large) {
+      gap: 96px;
+    }
+  }
+
+  &__subtitle {
+    @include font('inter', '18', 'bold');
+    margin: 0 0 18px 0;
+
+    @include screen(medium) {
+      @include font('inter', '20', 'bold');
+    }
+  }
+
+  &__info {
+    @include font('inter', '14', 'medium');
+    margin: 0 0 12px 0;
+
+    @include screen(medium) {
+      @include font('inter', '16', 'medium');
+    }
+
+    &:hover a {
+      @include transition(color);
+      color: var(--accent-main);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 14px;
+
+    @include screen(medium) {
+      display: none;
+    }
+
+    &-alt {
+      display: none;
+
+      @include screen(medium) {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+    }
+  }
+
+  &__social-icon {
+    width: 28px;
+    height: 28px;
+    stroke: var(--text-secondary);
+    cursor: pointer;
+
+    @include transition(stroke);
+
+    &:hover {
+      stroke: var(--accent-main);
+    }
+  }
+}
