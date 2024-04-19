@@ -1,33 +1,40 @@
 .overlay {
-  background-color: var(--background-overlay);
-  opacity: 100%;
+  &-newsletter,
+  &-contact {
+    background-color: var(--background-overlay);
+    opacity: 100%;
 
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  overflow-x: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    overflow-x: hidden;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
 
-  @include transition(opacity);
+    @include transition(opacity);
+  }
 }
 
 .modal-newsletter {
   background-color: var(--background-main);
+  box-shadow: 0px 5px 12px -4px var(--background-secondary);
   width: clamp(272px, 90%, 588px);
   position: relative;
 
   display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
 
-  @include screen(large) {
+  @include screen(medium) {
     width: clamp(588px, 90%, 860px);
   }
 
@@ -155,6 +162,115 @@
     &-input::placeholder {
       @include font('montserrat', '12', 'medium');
       color: var(--text-light);
+    }
+  }
+}
+
+.modal-contact {
+  background-color: var(--background-main);
+  box-shadow: 0px 5px 12px -4px var(--background-secondary);
+  width: clamp(272px, 90%, 511px);
+  position: relative;
+
+  display: flex;
+  // display: none;
+  flex-direction: column;
+  gap: 18px;
+
+  padding: 20px 16px;
+
+  z-index: 2;
+
+  @include screen(medium) {
+    padding: 48px 32px;
+
+    width: 511px;
+  }
+
+  &__icon {
+    stroke: var(--text-main);
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    z-index: 2;
+
+    cursor: pointer;
+
+    @include transition(stroke);
+
+    &:hover {
+      stroke: var(--accent-main);
+    }
+  }
+
+  &__title {
+    @include font('montserrat', '20', 'semi-bold');
+    margin: 0;
+
+    @include screen(medium) {
+      @include font('montserrat', '32', 'semi-bold');
+    }
+  }
+
+  &__text {
+    @include font('montserrat', '12', 'regular');
+    color: var(--text-light);
+    line-height: 130%;
+    margin: 0;
+
+    @include screen(medium) {
+      @include font('montserrat', '16', 'regular');
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    width: 100%;
+
+    &-label {
+      @include font('montserrat', '10', 'medium');
+      color: var(--text-light);
+
+      @include screen(medium) {
+        @include font('montserrat', '14', 'medium');
+      }
+    }
+
+    &-input {
+      @include font('montserrat', '12', 'medium');
+
+      border: 1px solid var(--input-border);
+      border-radius: 4px;
+
+      width: 100%;
+      height: 37px;
+
+      padding: 0 12px;
+      margin: 0 0 14px;
+
+      @include transition(border-color, color);
+
+      @include screen(medium) {
+        height: 50px;
+      }
+    }
+
+    &-input:hover,
+    &-input:active,
+    &-input:focus-within {
+      border-color: var(--accent-main);
+    }
+
+    &-button {
+      margin-top: 10px;
     }
   }
 }
