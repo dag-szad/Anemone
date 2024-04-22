@@ -16,6 +16,7 @@
 body {
   background-color: var(--background-main);
   color: var(--text-main);
+  overflow-anchor: none;
 }
 
 ul {
@@ -401,14 +402,14 @@ a {
   }
 }
 
-.store {
+.store__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 32px;
 }
 @media screen and (min-width: 768px) {
-  .store {
+  .store__content {
     gap: 60px;
   }
 }
@@ -424,14 +425,14 @@ a {
   }
 }
 .store__element {
-  width: clamp(136px, 50% - 8px, 600px);
+  width: clamp(136px, 45% - 8px, 600px);
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 @media screen and (min-width: 768px) {
   .store__element {
-    width: clamp(136px, 50% - 16px, 500px);
+    width: clamp(136px, 45% - 16px, 500px);
   }
 }
 .store__image {

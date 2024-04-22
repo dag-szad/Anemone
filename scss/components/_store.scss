@@ -1,11 +1,13 @@
 .store {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 32px;
-
-    @include screen(medium) {
-        gap: 60px;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+    
+        @include screen(medium) {
+            gap: 60px;
+        }
     }
 
     &__elements {
@@ -20,13 +22,13 @@
     }
 
     &__element {
-        width: clamp(136px, 50% - 8px, 600px);
+        width: clamp(136px, 45% - 8px, 600px);
         display: flex;
         flex-direction: column;
         gap: 6px;
 
         @include screen(medium) {
-            width: clamp(136px, 50% - 16px, 500px);
+            width: clamp(136px, 45% - 16px, 500px);
         }
     }
 

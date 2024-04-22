@@ -92,19 +92,22 @@
       <div class="overlay-contact contactOverlay is-hidden">
         <div class="modal-contact contactContent is-hidden">
           <svg class="modal-contact__icon contactExitButton">
-            <use
-              href="./images/icons/icons.svg#cancel"
-              alt="Cancel icon"
-            ></use>
+            <use href="./images/icons/icons.svg#cancel" alt="Cancel icon"></use>
           </svg>
           <h2 class="modal-contact__title">Contact us</h2>
-          <p class="modal-contact__text">If you have any additional questions or you want to clarify something before you make an order please fill in your contact details. We will call you back. </p>
+          <p class="modal-contact__text">
+            If you have any additional questions or you want to clarify
+            something before you make an order please fill in your contact
+            details. We will call you back.
+          </p>
           <form action="" class="modal-contact__form">
             <label for="name" class="modal-contact__form-label">Name</label>
-            <input type="text" class="modal-contact__form-input">
+            <input type="text" class="modal-contact__form-input" />
             <label for="email" class="modal-contact__form-label">Email</label>
-            <input type="email" class="modal-contact__form-input">
-            <button class="button-rectangle modal-contact__form-button">Send</button>
+            <input type="email" class="modal-contact__form-input" />
+            <button class="button-rectangle modal-contact__form-button">
+              Send
+            </button>
           </form>
         </div>
       </div>
@@ -142,55 +145,57 @@
       </section>
       <section class="container store" id="store">
         <h2 class="store__title title">Store</h2>
-        <ul class="store__elements">
-          <li class="store__element">
-            <img
-              alt="Orange flowers bouquet"
-              src="./images/store/bouquet1.png"
-              srcset="./images/store/bouquet1@2x.png 2x"
-              class="store__image"
-            />
-            <h3 class="store__titles">compliments</h3>
-            <p class="store__prices">from $15</p>
-          </li>
-          <li class="store__element">
-            <img
-              alt="Pink and white flowers bouquet"
-              src="./images/store/bouquet2.png"
-              srcset="./images/store/bouquet2@2x.png 2x"
-              class="store__image"
-            />
-            <h3 class="store__titles">bouquets size S</h3>
-            <p class="store__prices">from $25</p>
-          </li>
-          <li class="store__element">
-            <img
-              alt="Blue flowers bouquet"
-              src="./images/store/bouquet3.png"
-              srcset="./images/store/bouquet3@2x.png 2x"
-              class="store__image"
-            />
-            <h3 class="store__titles">bouquets size M</h3>
-            <p class="store__prices">from $45</p>
-          </li>
-          <li class="store__element">
-            <img
-              alt="Yellow flowers bouquet"
-              src="./images/store/bouquet4.png"
-              srcset="./images/store/bouquet4@2x.png 2x"
-              class="store__image"
-            />
-            <h3 class="store__titles">bouquets size L</h3>
-            <p class="store__prices">from $60</p>
-          </li>
-        </ul>
-        <button type="button" class="store__button button contactButton">
-          Order flowers
-        </button>
+        <div class="store__content">
+          <ul class="store__elements">
+            <li class="store__element">
+              <img
+                alt="Orange flowers bouquet"
+                src="./images/store/bouquet1.png"
+                srcset="./images/store/bouquet1@2x.png 2x"
+                class="store__image"
+              />
+              <h3 class="store__titles">compliments</h3>
+              <p class="store__prices">from $15</p>
+            </li>
+            <li class="store__element">
+              <img
+                alt="Pink and white flowers bouquet"
+                src="./images/store/bouquet2.png"
+                srcset="./images/store/bouquet2@2x.png 2x"
+                class="store__image"
+              />
+              <h3 class="store__titles">bouquets size S</h3>
+              <p class="store__prices">from $25</p>
+            </li>
+            <li class="store__element">
+              <img
+                alt="Blue flowers bouquet"
+                src="./images/store/bouquet3.png"
+                srcset="./images/store/bouquet3@2x.png 2x"
+                class="store__image"
+              />
+              <h3 class="store__titles">bouquets size M</h3>
+              <p class="store__prices">from $45</p>
+            </li>
+            <li class="store__element">
+              <img
+                alt="Yellow flowers bouquet"
+                src="./images/store/bouquet4.png"
+                srcset="./images/store/bouquet4@2x.png 2x"
+                class="store__image"
+              />
+              <h3 class="store__titles">bouquets size L</h3>
+              <p class="store__prices">from $60</p>
+            </li>
+          </ul>
+          <button type="button" class="store__button button contactButton">
+            Order flowers
+          </button>
+        </div>
       </section>
       <section class="delivery" id="delivery">
         <div class="container">
-          <h2 class="delivery__title title">Store</h2>
+          <h2 class="delivery__title title">Delivery</h2>
           <ol class="delivery__list">
             <li class="delivery__step">
               Choose your bouquet and make an order on website
@@ -288,10 +293,12 @@
           </div>
           <div class="blog__newsletter">
             <h3 class="blog__subtitle">Follow to our newsletter</h3>
-            <button type="button" class="button newsletterButton">Subscribe</button>
+            <button type="button" class="button newsletterButton">
+              Subscribe
+            </button>
             <div class="overlay-newsletter newsletterOverlay is-hidden">
               <div class="modal-newsletter newsletterContent is-hidden">
-                <svg class="modal-newsletter__icon  newsletterExitButton">
+                <svg class="modal-newsletter__icon newsletterExitButton">
                   <use
                     href="./images/icons/icons.svg#cancel"
                     alt="Cancel icon"
@@ -308,12 +315,21 @@
                     Follow to our newsletter
                   </h3>
                   <p class="modal-newsletter__text">
-                    Be the first to get exclusive offers and the latest news
-                    on our product directly in your box.
+                    Be the first to get exclusive offers and the latest news on
+                    our product directly in your box.
                   </p>
                   <form action="" class="modal-newsletter__form">
-                    <label for="email"class="modal-newsletter__form-label">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="Your email" class="modal-newsletter__form-input"/>
+                    <label for="email" class="modal-newsletter__form-label"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="Your email"
+                      class="modal-newsletter__form-input"
+                    />
                     <button type="submit" class="button-rectangle">
                       Subscribe
                     </button>
