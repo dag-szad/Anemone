@@ -32,6 +32,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <script type="module" src="./js/index.js" defer></script>
   </head>
   <body>
     <header class="container header">
@@ -49,7 +50,7 @@
         </ul>
       </nav>
       <div class="header__icons">
-        <svg class="header__icon" width="24" height="24">
+        <svg class="header__icon contactButton" width="24" height="24">
           <use
             href="./images/icons/icons.svg#icon_phone"
             alt="Phone icon"
@@ -88,9 +89,9 @@
           </ul>
         </nav>
       </div>
-      <div class="overlay-contact">
-        <div class="modal-contact">
-          <svg class="modal-contact__icon">
+      <div class="overlay-contact contactOverlay is-hidden">
+        <div class="modal-contact contactContent is-hidden">
+          <svg class="modal-contact__icon contactExitButton">
             <use
               href="./images/icons/icons.svg#cancel"
               alt="Cancel icon"
@@ -183,7 +184,7 @@
             <p class="store__prices">from $60</p>
           </li>
         </ul>
-        <button type="button" class="store__button button">
+        <button type="button" class="store__button button contactButton">
           Order flowers
         </button>
       </section>
@@ -287,10 +288,10 @@
           </div>
           <div class="blog__newsletter">
             <h3 class="blog__subtitle">Follow to our newsletter</h3>
-            <button type="button" class="button">Subscribe</button>
-            <div class="overlay-newsletter">
-              <div class="modal-newsletter">
-                <svg class="modal-newsletter__icon">
+            <button type="button" class="button newsletterButton">Subscribe</button>
+            <div class="overlay-newsletter newsletterOverlay is-hidden">
+              <div class="modal-newsletter newsletterContent is-hidden">
+                <svg class="modal-newsletter__icon  newsletterExitButton">
                   <use
                     href="./images/icons/icons.svg#cancel"
                     alt="Cancel icon"
