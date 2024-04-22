@@ -2,7 +2,6 @@
   &-newsletter,
   &-contact {
     background-color: var(--background-overlay);
-    opacity: 100%;
 
     height: 100%;
     width: 100%;
@@ -14,11 +13,10 @@
     overflow-x: hidden;
 
     display: flex;
-    display: none;
     justify-content: center;
     align-items: center;
 
-    @include transition(opacity);
+    @include transition(opacity, visibility);
   }
 }
 
@@ -29,10 +27,11 @@
   position: relative;
 
   display: flex;
-  display: none;
   flex-direction: column;
   justify-content: space-between;
   z-index: 2;
+
+  @include transition(opacity, visibility);
 
   @include screen(medium) {
     width: clamp(588px, 90%, 860px);
@@ -173,13 +172,14 @@
   position: relative;
 
   display: flex;
-  // display: none;
   flex-direction: column;
   gap: 18px;
 
   padding: 20px 16px;
 
   z-index: 2;
+
+  @include transition(opacity, visibility);
 
   @include screen(medium) {
     padding: 48px 32px;
