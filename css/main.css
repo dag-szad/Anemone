@@ -798,7 +798,7 @@ a {
   stroke: var(--accent-main);
 }
 
-.overlay-newsletter, .overlay-contact {
+.overlay-newsletter, .overlay-contact, .overlay-thanks {
   background-color: var(--background-overlay);
   height: 100%;
   width: 100%;
@@ -1064,4 +1064,72 @@ a {
 }
 .modal-contact__form-button {
   margin-top: 10px;
+}
+
+.modal-thanks {
+  background-color: var(--background-main);
+  box-shadow: 0px 5px 12px -4px var(--background-secondary);
+  width: clamp(272px, 90%, 511px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 16px;
+  z-index: 2;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .modal-thanks {
+    padding: 48px 32px;
+    width: 511px;
+  }
+}
+.modal-thanks__icon {
+  stroke: var(--text-main);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  cursor: pointer;
+  transition: stroke 0.3s ease-in-out;
+}
+.modal-thanks__icon:hover {
+  stroke: var(--accent-main);
+}
+.modal-thanks__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.modal-thanks__title {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .modal-thanks__title {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+.modal-thanks__text {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-light);
+  text-align: center;
+  line-height: 130%;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .modal-thanks__text {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=main.css.map */
