@@ -56,7 +56,11 @@
             alt="Phone icon"
           ></use>
         </svg>
-        <svg class="header__icon header__icon-mobile" width="24" height="24">
+        <svg
+          class="header__icon header__icon-mobile mobileButton"
+          width="24"
+          height="24"
+        >
           <use
             href="./images/icons/icons.svg#icon_menu"
             alt="Hamburger menu icon"
@@ -64,30 +68,49 @@
         </svg>
       </div>
 
-      <div class="header-modal">
-        <svg>
-          <use
-            href="./images/icons/icons.svg#icon_close"
-            alt="Anemone logo"
-          ></use>
-        </svg>
-        <a href="index.html">
-          <svg>
-            <use href="./images/icons/icons.svg#logo" alt="Anemone logo"></use>
+      <div class="header-modal mobileOverlay is-hidden">
+        <div class="header-modal__content mobileContent is-hidden">
+          <svg class="header-modal__icon mobileExitButton">
+            <use
+              href="./images/icons/icons.svg#icon_close"
+              alt="Cancel icon"
+            ></use>
           </svg>
-        </a>
-        <nav>
-          <ul class="header-modal__nav">
-            <li>
-              <a href="#about" class="header-modal__nav-link">About us</a>
-            </li>
-            <li><a href="#store" class="header-modal__nav-link">Store</a></li>
-            <li>
-              <a href="#delivery" class="header-modal__nav-link">Delivery</a>
-            </li>
-            <li><a href="#blog" class="header-modal__nav-link">Blog</a></li>
-          </ul>
-        </nav>
+          <a href="#" class="mobileExitButton">
+            <svg class="header-modal__logo">
+              <use
+                href="./images/icons/icons.svg#logo"
+                alt="Anemone logo"
+              ></use>
+            </svg>
+          </a>
+          <nav>
+            <ul class="header-modal__nav">
+              <li>
+                <a href="#about" class="header-modal__nav-link mobileExitButton"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a href="#store" class="header-modal__nav-link mobileExitButton"
+                  >Store</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#delivery"
+                  class="header-modal__nav-link mobileExitButton"
+                  >Delivery</a
+                >
+              </li>
+              <li>
+                <a href="#blog" class="header-modal__nav-link mobileExitButton"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div class="overlay-contact contactOverlay is-hidden">
         <div class="modal-contact contactContent is-hidden">
@@ -105,7 +128,10 @@
             <input type="text" class="modal-contact__form-input" />
             <label for="email" class="modal-contact__form-label">Email</label>
             <input type="email" class="modal-contact__form-input" />
-            <button type='button' class="button-rectangle modal-contact__form-button thanksButton">
+            <button
+              type="button"
+              class="button-rectangle modal-contact__form-button thanksButton"
+            >
               Send
             </button>
           </form>
@@ -123,12 +149,16 @@
             class="modal-thanks__image"
           />
           <h2 class="modal-thanks__title">Thank you!</h2>
-          <p class="modal-thanks__text">We have received your contact details and will reach you soon.</p>
-          <button type='button' class="button-rectangle modal-thanks__button thanksExitButton">
+          <p class="modal-thanks__text">
+            We have received your contact details and will reach you soon.
+          </p>
+          <button
+            type="button"
+            class="button-rectangle modal-thanks__button thanksExitButton"
+          >
             Continue
           </button>
         </div>
-
       </div>
     </header>
     <main class="main">
