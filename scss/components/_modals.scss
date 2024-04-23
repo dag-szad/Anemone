@@ -1,6 +1,7 @@
 .overlay {
   &-newsletter,
-  &-contact {
+  &-contact,
+  &-thanks {
     background-color: var(--background-overlay);
 
     height: 100%;
@@ -271,6 +272,76 @@
 
     &-button {
       margin-top: 10px;
+    }
+  }
+}
+
+.modal-thanks {
+  background-color: var(--background-main);
+  box-shadow: 0px 5px 12px -4px var(--background-secondary);
+  width: clamp(272px, 90%, 511px);
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+
+  padding: 20px 16px;
+
+  z-index: 2;
+
+  @include transition(opacity, visibility);
+
+  @include screen(medium) {
+    padding: 48px 32px;
+
+    width: 511px;
+  }
+
+  &__icon {
+    stroke: var(--text-main);
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    z-index: 2;
+
+    cursor: pointer;
+
+    @include transition(stroke);
+
+    &:hover {
+      stroke: var(--accent-main);
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__title {
+    @include font('montserrat', '20', 'semi-bold');
+    margin: 0;
+
+    @include screen(medium) {
+      @include font('montserrat', '32', 'semi-bold');
+    }
+  }
+
+  &__text {
+    @include font('montserrat', '12', 'regular');
+    color: var(--text-light);
+    text-align: center;
+    line-height: 130%;
+    margin: 0;
+
+    @include screen(medium) {
+      @include font('montserrat', '16', 'regular');
     }
   }
 }
