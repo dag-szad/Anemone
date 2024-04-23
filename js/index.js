@@ -30,7 +30,6 @@ contactExitButton.addEventListener('click', () => {
 const thanksButtons = document.querySelectorAll('.thanksButton');
 thanksButtons.forEach((thanksButton) => {
   thanksButton.addEventListener('click', () => {
-    console.log('thanks button clicked, current modal: ' + currentModal);
     if (currentModal === 'newsletter') {
       toggleModal('newsletter');
     } else if (currentModal === 'contact') {
