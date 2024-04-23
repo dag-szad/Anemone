@@ -1,4 +1,8 @@
 // General styles
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background-main);
   color: var(--text-main);
@@ -96,4 +100,5 @@ a {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+  transform: translateX(100%);
 }
