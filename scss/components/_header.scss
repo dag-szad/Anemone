@@ -59,6 +59,12 @@
     @include transition(fill);
 
     cursor: pointer;
+
+    &-mobile {
+      @include screen(medium) {
+        display: none;
+      }
+    }
   }
 
   &__icon:hover {
