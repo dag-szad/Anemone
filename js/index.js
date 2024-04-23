@@ -1,6 +1,20 @@
 import { toggleModal } from './openModal.js';
 let currentModal = 'none';
 
+const mobileButton = document.querySelector('.mobileButton');
+mobileButton.addEventListener('click', () => {
+  toggleModal('mobile');
+  currentModal = 'mobile';
+});
+
+const mobileExitButtons = document.querySelectorAll('.mobileExitButton');
+mobileExitButtons.forEach((mobileExitButton) => {
+  mobileExitButton.addEventListener('click', () => {
+    toggleModal('mobile');
+    currentModal = 'none';
+  });
+});
+
 const newsletterButton = document.querySelector('.newsletterButton');
 newsletterButton.addEventListener('click', () => {
   toggleModal('newsletter');
