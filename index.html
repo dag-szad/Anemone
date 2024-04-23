@@ -105,11 +105,30 @@
             <input type="text" class="modal-contact__form-input" />
             <label for="email" class="modal-contact__form-label">Email</label>
             <input type="email" class="modal-contact__form-input" />
-            <button class="button-rectangle modal-contact__form-button">
+            <button type='button' class="button-rectangle modal-contact__form-button thanksButton">
               Send
             </button>
           </form>
         </div>
+      </div>
+      <div class="overlay-thanks thanksOverlay is-hidden">
+        <div class="modal-thanks thanksContent is-hidden">
+          <svg class="modal-thanks__icon thanksExitButton">
+            <use href="./images/icons/icons.svg#cancel" alt="Cancel icon"></use>
+          </svg>
+          <img
+            alt="Minimalistic floral graphic"
+            src="./images/modals/thanks.png"
+            srcset="./images/modals/thanks@2x.png 2x"
+            class="modal-thanks__image"
+          />
+          <h2 class="modal-thanks__title">Thank you!</h2>
+          <p class="modal-thanks__text">We have received your contact details and will reach you soon.</p>
+          <button type='button' class="button-rectangle modal-thanks__button thanksExitButton">
+            Continue
+          </button>
+        </div>
+
       </div>
     </header>
     <main class="main">
@@ -330,7 +349,7 @@
                       placeholder="Your email"
                       class="modal-newsletter__form-input"
                     />
-                    <button type="submit" class="button-rectangle">
+                    <button type="submit" class="button-rectangle thanksButton">
                       Subscribe
                     </button>
                   </form>
