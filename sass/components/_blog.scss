@@ -13,32 +13,49 @@
     }
 
     &__slider {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        // display: flex;
+        // flex-direction: column;
+        // gap: 20px;
+
+        width: 100%;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
     }
 
     &__posts {
+        // display: flex;
+        // justify-content: center;
+        // gap: 16px;
+
         display: flex;
-        justify-content: center;
-        gap: 16px;
+        gap: 10px;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     &__post {
-        min-width: 130px;
-        height: 180px;
+        // min-width: 130px;
+        // height: 180px;
 
-        @include transition(width, height);
+        // @include transition(width, height);
 
-        @include screen(medium) {
-            min-width: 345px;
-            height: 400px;
-        }
+        // @include screen(medium) {
+        //     min-width: 345px;
+        //     height: 400px;
+        // }
 
-        @include screen(medium) {
-            min-width: 390px;
-            height: 420px;
-        }
+        // @include screen(medium) {
+        //     min-width: 390px;
+        //     height: 420px;
+        // }
+
+        height: 200px;
+        width: 200px;
+        border-radius: 5px;
+        background-color: lightgrey;
     }
 
     &__image {
