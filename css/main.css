@@ -684,31 +684,24 @@ a {
   }
 }
 .blog__slider {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
 }
 .blog__posts {
   display: flex;
-  justify-content: center;
-  gap: 16px;
+  gap: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .blog__post {
-  min-width: 130px;
-  height: 180px;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
-}
-@media screen and (min-width: 768px) {
-  .blog__post {
-    min-width: 345px;
-    height: 400px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .blog__post {
-    min-width: 390px;
-    height: 420px;
-  }
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: lightgrey;
 }
 .blog__image {
   display: inline-block;
