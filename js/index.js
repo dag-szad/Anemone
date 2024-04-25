@@ -1,4 +1,7 @@
 import { toggleModal } from './openModal.js';
+import { initializeSlider } from './blogSlider.js';
+
+// Modal handlers
 let currentModal = 'none';
 
 const mobileButton = document.querySelector('.mobileButton');
@@ -69,3 +72,7 @@ document.addEventListener('keydown', (event) => {
     toggleModal('contact');
   }
 });
+
+
+// Slider handler
+initializeSlider();
