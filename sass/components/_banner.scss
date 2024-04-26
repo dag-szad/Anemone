@@ -1,94 +1,62 @@
 .banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 45px 0 0 0;
+  &__elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
 
-  @include screen(medium) {
-    margin: 40px;
-  }
-
-  @include screen(large) {
-    margin: 60px;
+    margin: 44px 0 0 0;
   }
 
   &__image {
-    width: 145px;
-    height: 274px;
-
-    background-image: url('../images/banner/banner_small.png');
-    background-repeat: no-repeat;
-
-    @include screen(medium) {
-      width: 390px;
-      height: 636px;
-
-      background-image: url('../images/banner/banner_big.png');
-    }
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .banner {
-        background-image: url('../images/banner/banner_small@2x.png');
-
-        @include screen('medium') {
-          background-image: url('../images/banner/banner_big@2x.png');
-        }
-      }
-    }
-  }
-
-  &__elements {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-    @include screen(medium) {
-      gap: 30px;
-    }
+    width: 50%;
+    max-width: 390px;
   }
 
   &__text {
-    width: 75px;
-
-    @include font('montserrat', '14', 'regular');
+    display: none;
+    width: 25%;
+    max-width: 160px;
     text-align: center;
-    margin: 0;
+
+    @include screen(small) {
+      @include font('montserrat', '20', 'regular');
+      display: block;
+    }
 
     @include screen(medium) {
-      width: 145px;
       @include font('montserrat', '24', 'regular');
     }
   }
 
   &__icon {
-    width: 75px;
+    display: none;
+    width: 25%;
+    max-width: 160px;
 
-    @include screen(medium) {
-      width: 145px;
+    @include screen(small) {
+      display: block;
     }
   }
 
   &__title {
     position: relative;
-    top: -30px;
+    top: -5vh;
 
-    @include transition(font-size);
-
-    @include font('montserrat', '52', 'regular');
     text-transform: uppercase;
+    text-align: center;
     margin: 0;
 
-    @include screen(medium) {
-      @include font('montserrat', '120', 'regular');
-      top: -70px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: clamp(2rem, 15vw, 10rem);
+
+    @include screen(small) {
+      top: -7vh;
     }
 
-    @include screen(large) {
-      @include font('montserrat', '160', 'regular');
-      top: -100px;
+    @include screen(medium) {
+      top: -10vh;
     }
   }
 }
