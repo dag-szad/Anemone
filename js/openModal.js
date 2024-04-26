@@ -3,9 +3,8 @@ export function toggleModal(modalType) {
   const modalContent = document.querySelector(`.${modalType}Content`);
 
   modalOverlay.classList.toggle('is-hidden');
-  modalContent.classList.toggle('is-hidden');
 
-  if (!modalContent.classList.contains('is-hidden')) {
+  if (!modalOverlay.classList.contains('is-hidden')) {
     modalContent.focus();
     modalOverlay.addEventListener('click', (event) => {
       if (event.target === modalOverlay) {
