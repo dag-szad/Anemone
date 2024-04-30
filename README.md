@@ -2,7 +2,7 @@
 
 # Single web page for small non existing business
 
-Anemone is my personal take of a group project I previously contributed to. The original project can be viewed here. In this version, I focused on creating more consistent code within the same technologies.
+Anemone is my personal take of a group project I previously contributed to. The original project can be viewed [here](https://github.com/amizdalka/anemone-project). In this version, I focused on creating more consistent code within the same technologies.
 
 Taking on the entire project on my own, even with more experience, was indeed a challenge. It took me much longer than I expected, but I'm more than happy with the results. 🥳
 
