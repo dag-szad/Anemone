@@ -21,9 +21,9 @@ Taking on the entire project on my own, even with more experience, was indeed a 
 ![Main page header and banner](images/docs/preview_1.1.png)
 ![Main page about section](images/docs/preview_1.2.png)
 ![Main page store section](images/docs/preview_1.3.png)
-![Portfolio page delivery innfo](images/docs/preview_1.4.png)
-![Contact page info](images/docs/preview_1.5.png)
-![Contact page form](images/docs/preview_1.6.png)
+![Main page delivery info](images/docs/preview_1.4.png)
+![Main page blog and newsletter](images/docs/preview_1.5.png)
+![Footer](images/docs/preview_1.6.png)
 
 ## Roadmap
 
