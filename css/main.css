@@ -1122,6 +1122,7 @@ a {
 .modal-newsletter__image {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
   height: 121px;
   transition: height 0.3s ease-in-out;
 }
