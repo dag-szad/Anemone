@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anemone</title>
+    <title>Anemone | Home page</title>
     <link
       href="./images/favicon/favicon_light.ico"
       rel="icon"
@@ -34,13 +34,20 @@
     <link rel="stylesheet" href="./css/main.css" />
     <script type="module" src="./js/index.js" defer></script>
   </head>
-  <body>
+  <body class="body">
     <header class="container header">
-      <a href="index.html">
-        <svg class="header__logo">
+      <a href="index.html" aria-label="Home">
+        <svg class="header__logo" role="presentation">
           <use href="./images/icons/icons.svg#logo" alt="Anemone logo"></use>
         </svg>
       </a>
+      <div class="skip-links">
+        <a href="#about" class="skip-link">Go to About us</a>
+        <a href="#store" class="skip-link">Go to Store</a>
+        <a href="#delivery" class="skip-link">Go to Delivery</a>
+        <a href="#blog" class="skip-link">Go to Blog</a>
+        <a href="#footer" class="skip-link">Go to Footer</a>
+      </div>
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li><a href="#about" class="header__nav-link">About us</a></li>
@@ -70,14 +77,18 @@
 
       <div class="header-modal mobileOverlay is-hidden">
         <div class="header-modal__content mobileContent">
-          <svg class="header-modal__icon mobileExitButton">
+          <svg
+            class="header-modal__icon mobileExitButton"
+            role="button"
+            aria-label="Close modal"
+          >
             <use
               href="./images/icons/icons.svg#icon_close"
               alt="Cancel icon"
             ></use>
           </svg>
           <a href="#" class="mobileExitButton">
-            <svg class="header-modal__logo">
+            <svg class="header-modal__logo" role="presentation">
               <use
                 href="./images/icons/icons.svg#logo"
                 alt="Anemone logo"
@@ -170,7 +181,7 @@
     <main class="main">
       <section class="container banner">
         <div class="banner__elements">
-          <p class="banner__text">flower<br />studio</p>
+          <h2 class="banner__text">flower<br />studio</h2>
           <img
             alt="Anemone flower"
             src="./images/banner/banner_mobile.png"
@@ -183,7 +194,7 @@
             sizes="(min-width: 768px) 390px, 145px"
             class="banner__image"
           />
-          <svg class="banner__icon">
+          <svg class="banner__icon" role="presentation">
             <use
               href="./images/icons/icons.svg#shop_button"
               alt="Shop now button"
@@ -237,7 +248,7 @@
                 class="store__image"
               />
               <h3 class="store__titles">compliments</h3>
-              <p class="store__prices">from $15</p>
+              <h4 class="store__prices">from $15</h4>
             </li>
             <li class="store__element">
               <img
@@ -255,7 +266,7 @@
                 class="store__image"
               />
               <h3 class="store__titles">bouquets size S</h3>
-              <p class="store__prices">from $25</p>
+              <h4 class="store__prices">from $25</h4>
             </li>
             <li class="store__element">
               <img
@@ -273,7 +284,7 @@
                 class="store__image"
               />
               <h3 class="store__titles">bouquets size M</h3>
-              <p class="store__prices">from $45</p>
+              <h4 class="store__prices">from $45</h4>
             </li>
             <li class="store__element">
               <img
@@ -291,7 +302,7 @@
                 class="store__image"
               />
               <h3 class="store__titles">bouquets size L</h3>
-              <p class="store__prices">from $60</p>
+              <h4 class="store__prices">from $60</h4>
             </li>
           </ul>
           <button type="button" class="store__button button contactButton">
@@ -436,22 +447,22 @@
             </ul>
           </div>
           <div class="blog__arrows">
-            <button type="button" class="blog__arrow blog__arrow-previous">
-              <svg class="blog__icon">
+            <div type="button" class="blog__arrow blog__arrow-previous">
+              <svg class="blog__icon" role="presentation">
                 <use
                   href="./images/icons/icons.svg#arrow"
                   alt="Previous image button"
                 ></use>
               </svg>
-            </button>
-            <button type="button" class="blog__arrow blog__arrow-next">
-              <svg class="blog__icon">
+            </div>
+            <div type="button" class="blog__arrow blog__arrow-next">
+              <svg class="blog__icon" role="presentation">
                 <use
                   href="./images/icons/icons.svg#arrow"
                   alt="Next image button"
                 ></use>
               </svg>
-            </button>
+            </div>
           </div>
           <div class="blog__newsletter">
             <h3 class="blog__subtitle">Follow to our newsletter</h3>
@@ -511,23 +522,25 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container footer__content">
-        <a href="index.html" class="footer__logo">
-          <svg class="footer__icon">
+        <a href="index.html" class="footer__logo" aria-label="Home">
+          <svg class="footer__icon" role="presentation">
             <use href="./images/icons/icons.svg#logo" alt="Anemone logo"></use>
           </svg>
         </a>
         <div class="footer__elements">
           <div class="footer__navigation">
             <h2 class="footer__subtitle">Navigation</h2>
-            <ul>
-              <li class="footer__info"><a href="index.html">Anemone</a></li>
-              <li class="footer__info"><a href="#about">About us</a></li>
-              <li class="footer__info"><a href="#store">Store</a></li>
-              <li class="footer__info"><a href="#delivery">Delivery</a></li>
-              <li class="footer__info"><a href="#blog">Blog</a></li>
-            </ul>
+            <nav>
+              <ul>
+                <li class="footer__info"><a href="index.html">Anemone</a></li>
+                <li class="footer__info"><a href="#about">About us</a></li>
+                <li class="footer__info"><a href="#store">Store</a></li>
+                <li class="footer__info"><a href="#delivery">Delivery</a></li>
+                <li class="footer__info"><a href="#blog">Blog</a></li>
+              </ul>
+            </nav>
           </div>
           <div class="footer__hours">
             <h2 class="footer__subtitle">Opening hours</h2>
@@ -551,8 +564,8 @@
           </div>
           <ul class="footer__socials">
             <li>
-              <a href="https://www.facebook.com">
-                <svg class="footer__social-icon">
+              <a href="https://www.facebook.com" aria-label="Facebook">
+                <svg class="footer__social-icon" role="presentation">
                   <use
                     href="./images/icons/icons.svg#facebook"
                     alt="Facebook logo"
@@ -561,8 +574,8 @@
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/">
-                <svg class="footer__social-icon">
+              <a href="https://www.instagram.com/" aria-label="Instagram">
+                <svg class="footer__social-icon" role="presentation">
                   <use
                     href="./images/icons/icons.svg#instagram"
                     alt="Instagram logo"
@@ -574,8 +587,8 @@
         </div>
         <ul class="footer__socials-alt">
           <li>
-            <a href="https://www.facebook.com">
-              <svg class="footer__social-icon">
+            <a href="https://www.facebook.com" aria-label="Facebook">
+              <svg class="footer__social-icon" role="presentation">
                 <use
                   href="./images/icons/icons.svg#facebook"
                   alt="Facebook logo"
@@ -584,8 +597,8 @@
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/">
-              <svg class="footer__social-icon">
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+              <svg class="footer__social-icon" role="presentation">
                 <use
                   href="./images/icons/icons.svg#instagram"
                   alt="Instagram logo"

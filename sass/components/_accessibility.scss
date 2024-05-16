@@ -1,0 +1,27 @@
+.skip-links {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.skip-link {
+  position: absolute;
+  background: var(--background-secondary);
+  border-radius: 0 0 30px 30px;
+
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+
+  width: max-content;
+  padding: 20px;
+
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
