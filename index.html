@@ -36,7 +36,7 @@
   </head>
   <body>
     <header class="container header">
-      <a href="index.html">
+      <a href="index.html" aria-label="Home">
         <svg class="header__logo">
           <use href="./images/icons/icons.svg#logo" alt="Anemone logo"></use>
         </svg>
@@ -170,7 +170,7 @@
     <main class="main">
       <section class="container banner">
         <div class="banner__elements">
-          <p class="banner__text">flower<br />studio</p>
+          <h2 class="banner__text">flower<br />studio</h2>
           <img
             alt="Anemone flower"
             src="./images/banner/banner_mobile.png"
@@ -237,7 +237,7 @@
                 class="store__image"
               />
               <h3 class="store__titles">compliments</h3>
-              <p class="store__prices">from $15</p>
+              <h4 class="store__prices">from $15</h4>
             </li>
             <li class="store__element">
               <img
@@ -255,7 +255,7 @@
                 class="store__image"
               />
               <h3 class="store__titles">bouquets size S</h3>
-              <p class="store__prices">from $25</p>
+              <h4 class="store__prices">from $25</h4>
             </li>
             <li class="store__element">
               <img
@@ -273,7 +273,7 @@
                 class="store__image"
               />
               <h3 class="store__titles">bouquets size M</h3>
-              <p class="store__prices">from $45</p>
+              <h4 class="store__prices">from $45</h4>
             </li>
             <li class="store__element">
               <img
@@ -291,7 +291,7 @@
                 class="store__image"
               />
               <h3 class="store__titles">bouquets size L</h3>
-              <p class="store__prices">from $60</p>
+              <h4 class="store__prices">from $60</h4>
             </li>
           </ul>
           <button type="button" class="store__button button contactButton">
@@ -436,22 +436,22 @@
             </ul>
           </div>
           <div class="blog__arrows">
-            <button type="button" class="blog__arrow blog__arrow-previous">
+            <div type="button" class="blog__arrow blog__arrow-previous">
               <svg class="blog__icon">
                 <use
                   href="./images/icons/icons.svg#arrow"
                   alt="Previous image button"
                 ></use>
               </svg>
-            </button>
-            <button type="button" class="blog__arrow blog__arrow-next">
+            </div>
+            <div type="button" class="blog__arrow blog__arrow-next">
               <svg class="blog__icon">
                 <use
                   href="./images/icons/icons.svg#arrow"
                   alt="Next image button"
                 ></use>
               </svg>
-            </button>
+            </div>
           </div>
           <div class="blog__newsletter">
             <h3 class="blog__subtitle">Follow to our newsletter</h3>
@@ -511,9 +511,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer" >
       <div class="container footer__content">
-        <a href="index.html" class="footer__logo">
+        <a href="index.html" class="footer__logo" aria-label="Home">
           <svg class="footer__icon">
             <use href="./images/icons/icons.svg#logo" alt="Anemone logo"></use>
           </svg>
@@ -551,7 +551,7 @@
           </div>
           <ul class="footer__socials">
             <li>
-              <a href="https://www.facebook.com">
+              <a href="https://www.facebook.com" aria-label="Facebook">
                 <svg class="footer__social-icon">
                   <use
                     href="./images/icons/icons.svg#facebook"
@@ -561,7 +561,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/">
+              <a href="https://www.instagram.com/" aria-label="Instagram">
                 <svg class="footer__social-icon">
                   <use
                     href="./images/icons/icons.svg#instagram"
@@ -574,7 +574,7 @@
         </div>
         <ul class="footer__socials-alt">
           <li>
-            <a href="https://www.facebook.com">
+            <a href="https://www.facebook.com" aria-label="Facebook">
               <svg class="footer__social-icon">
                 <use
                   href="./images/icons/icons.svg#facebook"
@@ -584,7 +584,7 @@
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/" aria-label="Instagram">
               <svg class="footer__social-icon">
                 <use
                   href="./images/icons/icons.svg#instagram"
