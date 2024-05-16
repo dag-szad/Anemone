@@ -1,16 +1,16 @@
 :root {
-  --accent-main: #e86f54;
-  --accent-main-hover: #EB866F;
+  --accent-main: #d64221;
+  --accent-main-hover: #e15b3d;
   --text-main: #000;
   --text-main-transparent: #00000075;
-  --text-secondary: #FFF;
-  --text-light: #5C5C5C;
-  --background-main: #FFF;
+  --text-secondary: #fff;
+  --text-light: #5c5c5c;
+  --background-main: #fff;
   --background-secondary: #000;
   --background-overlay: #00000045;
-  --icon-black: #0E0E0E;
-  --icon-white: #FFF;
-  --input-border: #D7D7D7;
+  --icon-black: #0e0e0e;
+  --icon-white: #fff;
+  --input-border: #d7d7d7;
 }
 
 html {
