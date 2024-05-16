@@ -34,13 +34,20 @@
     <link rel="stylesheet" href="./css/main.css" />
     <script type="module" src="./js/index.js" defer></script>
   </head>
-  <body>
+  <body class="body">
     <header class="container header">
       <a href="index.html" aria-label="Home">
         <svg class="header__logo">
           <use href="./images/icons/icons.svg#logo" alt="Anemone logo"></use>
         </svg>
       </a>
+      <div class="skip-links">
+        <a href="#about" class="skip-link">Go to About us</a>
+        <a href="#store" class="skip-link">Go to Store</a>
+        <a href="#delivery" class="skip-link">Go to Delivery</a>
+        <a href="#blog" class="skip-link">Go to Blog</a>
+        <a href="#footer" class="skip-link">Go to Footer</a>
+      </div>
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li><a href="#about" class="header__nav-link">About us</a></li>
@@ -511,7 +518,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer" id="footer" >
+    <footer class="footer" id="footer">
       <div class="container footer__content">
         <a href="index.html" class="footer__logo" aria-label="Home">
           <svg class="footer__icon">
