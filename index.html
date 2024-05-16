@@ -37,7 +37,7 @@
   <body class="body">
     <header class="container header">
       <a href="index.html" aria-label="Home">
-        <svg class="header__logo">
+        <svg class="header__logo" role="presentation">
           <use href="./images/icons/icons.svg#logo" alt="Anemone logo"></use>
         </svg>
       </a>
@@ -77,14 +77,18 @@
 
       <div class="header-modal mobileOverlay is-hidden">
         <div class="header-modal__content mobileContent">
-          <svg class="header-modal__icon mobileExitButton">
+          <svg
+            class="header-modal__icon mobileExitButton"
+            role="button"
+            aria-label="Close modal"
+          >
             <use
               href="./images/icons/icons.svg#icon_close"
               alt="Cancel icon"
             ></use>
           </svg>
           <a href="#" class="mobileExitButton">
-            <svg class="header-modal__logo">
+            <svg class="header-modal__logo" role="presentation">
               <use
                 href="./images/icons/icons.svg#logo"
                 alt="Anemone logo"
@@ -190,7 +194,7 @@
             sizes="(min-width: 768px) 390px, 145px"
             class="banner__image"
           />
-          <svg class="banner__icon">
+          <svg class="banner__icon" role="presentation">
             <use
               href="./images/icons/icons.svg#shop_button"
               alt="Shop now button"
@@ -444,7 +448,7 @@
           </div>
           <div class="blog__arrows">
             <div type="button" class="blog__arrow blog__arrow-previous">
-              <svg class="blog__icon">
+              <svg class="blog__icon" role="presentation">
                 <use
                   href="./images/icons/icons.svg#arrow"
                   alt="Previous image button"
@@ -452,7 +456,7 @@
               </svg>
             </div>
             <div type="button" class="blog__arrow blog__arrow-next">
-              <svg class="blog__icon">
+              <svg class="blog__icon" role="presentation">
                 <use
                   href="./images/icons/icons.svg#arrow"
                   alt="Next image button"
@@ -521,7 +525,7 @@
     <footer class="footer" id="footer">
       <div class="container footer__content">
         <a href="index.html" class="footer__logo" aria-label="Home">
-          <svg class="footer__icon">
+          <svg class="footer__icon" role="presentation">
             <use href="./images/icons/icons.svg#logo" alt="Anemone logo"></use>
           </svg>
         </a>
@@ -561,7 +565,7 @@
           <ul class="footer__socials">
             <li>
               <a href="https://www.facebook.com" aria-label="Facebook">
-                <svg class="footer__social-icon">
+                <svg class="footer__social-icon" role="presentation">
                   <use
                     href="./images/icons/icons.svg#facebook"
                     alt="Facebook logo"
@@ -571,7 +575,7 @@
             </li>
             <li>
               <a href="https://www.instagram.com/" aria-label="Instagram">
-                <svg class="footer__social-icon">
+                <svg class="footer__social-icon" role="presentation">
                   <use
                     href="./images/icons/icons.svg#instagram"
                     alt="Instagram logo"
@@ -584,7 +588,7 @@
         <ul class="footer__socials-alt">
           <li>
             <a href="https://www.facebook.com" aria-label="Facebook">
-              <svg class="footer__social-icon">
+              <svg class="footer__social-icon" role="presentation">
                 <use
                   href="./images/icons/icons.svg#facebook"
                   alt="Facebook logo"
@@ -594,7 +598,7 @@
           </li>
           <li>
             <a href="https://www.instagram.com/" aria-label="Instagram">
-              <svg class="footer__social-icon">
+              <svg class="footer__social-icon" role="presentation">
                 <use
                   href="./images/icons/icons.svg#instagram"
                   alt="Instagram logo"
