@@ -32,7 +32,7 @@ Taking on the entire project on my own, even with more experience, was indeed a 
 - ✅ **Responsive Homepage** - The homepage is now responsive for consistent experience across devices.
 - ✅ **Custom JavaScript Implementation** - Independently coded JavaScript has been integrated into the design to increase interactivity and functionality.
 - ✅ **Optimized Images** - Images have been optimized for web performance, reducing loading times and overall site speed.
-- ✅ **Accessibility Certification** - The website now provides accessibility features and conforms to accessibility standards, as confirmed by the [accessibility certification](https://acsbace.com/reports/6646459be80e8b00030699da?brandId=664645c8a7574200034c2be3&_hsenc=p2ANqtz-9WU5cCgBh8bvmhKZFgXiSfFO6Swpjpl2uGjJ92V7OaFnQkN-YnyijenpzUw--urax-HhgVUz7HxLb67jWouQHesl0hEg&_hsmi=90649158).
+- ✅ **Accessibility Certification** - The website now provides accessibility features and complies with accessibility standards as confirmed by [accesScan report](https://acsbace.com/reports/6646459be80e8b00030699da?brandId=664645c8a7574200034c2be3&_hsenc=p2ANqtz-9WU5cCgBh8bvmhKZFgXiSfFO6Swpjpl2uGjJ92V7OaFnQkN-YnyijenpzUw--urax-HhgVUz7HxLb67jWouQHesl0hEg&_hsmi=90649158).
 
 
 ##### To Do:
