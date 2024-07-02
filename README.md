@@ -38,7 +38,6 @@ Taking on the entire project on my own, even with more experience, was indeed a 
 ##### To Do:
 
 - ❌ **Form Handling** - Implement form functionality to enable user interaction and data submission.
-- ❌ **Dark Mode** – Introduce a dark mode option for users who prefer darker colors, improving accessibility and user experience.
 
 
 ## Authors
